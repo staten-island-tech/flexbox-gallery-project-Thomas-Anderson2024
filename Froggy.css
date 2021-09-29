@@ -5,13 +5,15 @@ main {
 }
 .post {
   background-color: #002400;
-
+  margin: 5%;
   padding: 10%;
   border-radius: 5%;
 }
 .post:hover {
   box-shadow: 5% #000;
   padding: 10.1%;
+  margin: 4.9%;
+  filter: drop-shadow(0 0 0.75rem #58641d);
 }
 h1 {
   display: flex;
