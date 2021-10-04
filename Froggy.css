@@ -1,9 +1,14 @@
+@font-face {
+  font-family: font-family: 'Jura', sans-serif;;
+  src: url(https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap);
+}
+
 html {
   background-color: #99b2dd;
   box-sizing: border-box;
   font-size: 62.5%;
   color: #f9dec9;
-  border-radius: 1%;
+  font-family: 'Jura', sans-serif;
 }
 main {
   display: flex;
@@ -12,12 +17,42 @@ main {
 }
 div {
   box-sizing: content-box;
-  width: 33%;
-  margin-bottom: 5%;
-  padding-bottom: 28%;
+  width: 20%;
+  height: 20%;
+}
+.post{
+  box-sizing: border-box;
+
+  margin: 5%;
   text-align: center;
-  border-radius: 5rem;
+  border-radius: 5%;
   background-color: #3a405a;
+  box-shadow: 0 0 1rem #0f4cb4;
+  transition-duration: .5s;
+  justify-content: center;
+}
+div:hover {
+box-shadow: 0 0 2rem #0f4cb4;
+transition-duration: .5s;
+transform: scale(105%);
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  color: #3C3744;
+}
+img{
+  width: 60%;
+}
+#post1:hover{
+  filter: sepia(50%);
+}
+#post2:hover{
+  filter: grayscale(90%);
+}
+#post3:hover{
+  filter: saturate(2000%);
 }
 
 /* main {
