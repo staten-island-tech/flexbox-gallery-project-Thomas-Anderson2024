@@ -14,6 +14,8 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  
 }
 div {
   box-sizing: content-box;
@@ -42,9 +44,39 @@ h1 {
   font-size: 5rem;
   color: #3C3744;
 }
-img{
+#frogimg{
   width: 60%;
 }
+#post9img{
+  width: 60%;
+}
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+@keyframes big{
+  from {
+    transform:scale(100%)
+  }
+  to {
+    transform:scale(1000%)
+}}
+@keyframes shrink{
+  from {
+    transform:scale(100%)
+  }
+  to {
+    transform:scale(0%)
+}}
+@keyframes circle{
+
+  to {
+    border-radius: 100%;
+  }}
 #post1:hover{
   filter: sepia(50%);
 }
@@ -54,7 +86,44 @@ img{
 #post3:hover{
   filter: saturate(2000%);
 }
+#post4:hover{
+  filter: invert(100);
+}
+#post5:hover{
+  filter:opacity(0)
+}
+#post6:hover{
+  animation-name: spin;
+  animation-duration: 6ms;
+  animation-iteration-count: infinite;
+ animation-timing-function: linear;
+}
+#post7:hover{
+  animation-name: shrink;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+ animation-timing-function: linear;
+}
+#post8:hover{
+  animation-name: big;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+ animation-timing-function: linear;
+}
+#post9:hover{
+  animation-name: circle;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+ animation-timing-function: linear;
 
+}
+#post9img:hover{
+  animation-name: circle;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+ animation-timing-function: linear;
+
+}
 /* main {
   display: flex;
   flex-wrap: wrap;
