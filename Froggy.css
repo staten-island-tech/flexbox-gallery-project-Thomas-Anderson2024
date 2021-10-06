@@ -44,12 +44,39 @@ h1 {
   font-size: 5rem;
   color: #3C3744;
 }
+#bigfrog{
+  animation-name: slide;
+  animation-duration:1s;
+  animation-iteration-count: 1;
+ animation-timing-function: linear;
+ margin-top: -100%;
+ align-items: center;
+ justify-content: center;
+ opacity: 0%;
+ transform: scale(0%);
+ max-width: 100%;
+}
 #frogimg{
   width: 60%;
 }
 #post9img{
   width: 60%;
+  box-sizing: border-box;
 }
+@keyframes slide{
+  0%{
+    opacity: 0%;
+    transform: scale(100%);
+  }
+  50%{
+    opacity: 100%;
+    transform:scale(100%);
+  }
+  100%{
+    opacity: 0%;
+    transform: scale(100%);
+  }
+  }
 @keyframes spin {
   from {
       transform:rotate(0deg);
@@ -73,9 +100,11 @@ h1 {
     transform:scale(0%)
 }}
 @keyframes circle{
-
+to{
+  transform: scale(150%);
+}
   to {
-    border-radius: 100%;
+    border-radius: 20%;
   }}
 #post1:hover{
   filter: sepia(50%);
@@ -117,13 +146,7 @@ h1 {
  animation-timing-function: linear;
 
 }
-#post9img:hover{
-  animation-name: circle;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
- animation-timing-function: linear;
 
-}
 /* main {
   display: flex;
   flex-wrap: wrap;
