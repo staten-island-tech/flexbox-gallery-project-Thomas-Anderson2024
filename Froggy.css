@@ -16,6 +16,23 @@ html {
   color: #f9dec9;
   font-family: 'Jura', sans-serif;
 }
+@media only screen and (max-width:1920px){
+  div{
+    width:20%;
+    height: 20%;
+  }}
+ @media only screen and (max-width:800px){
+   div{
+     width:40%;
+     height: 40%;
+   }
+ }
+ @media only screen and (max-width:500px){
+  div{
+    width:90%;
+    height: 90%;
+  }
+}
 section {
   display: flex;
   flex-wrap: wrap;
@@ -25,8 +42,6 @@ section {
 }
 div {
   box-sizing: content-box;
-  width: 20%;
-  height: 20%;
 }
 .post{
   box-sizing: border-box;
