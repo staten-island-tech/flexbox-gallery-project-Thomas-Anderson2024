@@ -2,11 +2,17 @@
   font-family: font-family: 'Jura', sans-serif;;
   src: url(https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap);
 }
-
+html,
+body, 
+*{
+  box-sizing: border-box;
+  font-size: 62.5%;
+  margin: 0;
+  padding:0;
+}
 html {
   background-color: #99b2dd;
   box-sizing: border-box;
-  font-size: 62.5%;
   color: #f9dec9;
   font-family: 'Jura', sans-serif;
 }
@@ -24,7 +30,7 @@ div {
 }
 .post{
   box-sizing: border-box;
-
+  font-size: 2.5rem;
   margin: 5%;
   text-align: center;
   border-radius: 5%;
