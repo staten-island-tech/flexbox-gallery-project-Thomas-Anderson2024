@@ -10,7 +10,7 @@ html {
   color: #f9dec9;
   font-family: 'Jura', sans-serif;
 }
-main {
+section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -63,6 +63,7 @@ h1 {
 #post9img{
   width: 60%;
   box-sizing: border-box;
+  padding-bottom: 5%;
 }
 @keyframes slide{
   0%{
