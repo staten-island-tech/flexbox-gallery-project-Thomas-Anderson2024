@@ -21,10 +21,13 @@ html {
     width:20%;
     height: 20%;
   }}
- @media only screen and (max-width:800px){
+ @media only screen and (max-width:915px){
    div{
      width:40%;
      height: 40%;
+   }
+   .post{
+     font-size: 60%;
    }
  }
  @media only screen and (max-width:500px){
@@ -32,13 +35,16 @@ html {
     width:90%;
     height: 90%;
   }
+
 }
 section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  
+}
+p{
+  margin: 4%;
 }
 div {
   box-sizing: content-box;
