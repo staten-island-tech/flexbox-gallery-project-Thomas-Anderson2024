@@ -49,8 +49,9 @@ section {
   justify-content: space-between;
   align-items: center;
 }
-p{
+.postHeader{
   margin: 4%;
+  font-weight: lighter;
 }
 .post{
   box-sizing: border-box;
@@ -73,23 +74,21 @@ h1 {
   font-size: 5rem;
   color: #3C3744;
 }
-#bigfrog{
+.loadimg{
   animation-name: slide;
   animation-duration:1s;
   animation-iteration-count: 1;
  animation-timing-function: linear;
  margin-top: -100%;
- align-items: center;
- justify-content: center;
  opacity: 0%;
  transform: scale(0%);
  max-width: 100%;
 }
-#frogimg{
+.postimg{
   width: 60%;
   padding-bottom: 5%;
 }
-#post9img{
+.post9img{
   width: 60%;
   box-sizing: border-box;
   padding-bottom: 5%;
